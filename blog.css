@@ -1,0 +1,108 @@
+/* Selects all h1 tags */
+h1 {
+  opacity: 0; /* Makes the text invisible */
+  display: inline-block; /* Displays the text on the same line */
+  animation: animate 2s linear forwards; /* Applies the animate animation for 2 seconds with a linear easing and forwards animation-fill-mode */
+  -webkit-animation: animate 2s linear forwards; /* Applies the same animation for webkit-based browsers */
+}
+
+/* Animation keyframes for the h1 tag */
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* Animation keyframes for the h1 tag for webkit-based browsers */
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/* Selects all h2 tags */
+h2 {
+  color: blue; /* Sets the text color to blue */
+}
+
+/* Selects all p tags */
+p {
+  font-size: 16px; /* Sets the font size to 16 pixels */
+  line-height: 1.5; /* Sets the line-height to 1.5 */
+}
+
+/* Selects all strong tags */
+strong {
+  font-weight: bold; /* Sets the font weight to bold */
+}
+
+/* Selects all em tags */
+em {
+  font-style: italic; /* Sets the font style to italic */
+}
+
+/* Selects all a tags */
+a {
+  color: red; /* Sets the link color to red */
+  text-decoration: none; /* Removes the underline */
+}
+
+/* Selects all li tags */
+li {
+  list-style: square inside; /* Sets the list style to square inside */
+}
+
+/* Selects all th tags */
+th {
+  background-color: lightgrey; /* Sets the background color to light grey */
+  text-align: center; /* Sets the text alignment to center */
+}
+
+/* Selects all td tags */
+td {
+  text-align: center; /* Sets the text alignment to center */
+}
+
+/* Selects all form labels */
+label {
+  display: block; /* Displays the labels on separate lines */
+  margin-bottom: 10px; /* Adds a margin bottom of 10 pixels */
+}
+
+/* Selects all form inputs */
+input, select, textarea {
+  display: block; /* Displays the inputs on separate lines */
+  margin-bottom: 10px; /* Adds a margin bottom of 10 pixels */
+  width: 100%; /* Sets the width to 100% */
+  padding: 5px; /* Adds 5 pixels of padding */
+  border: 1px solid black; /* Adds a 1 pixel black border */
+  border-radius: 5px; /* Adds a 5 pixel border radius */
+}
+
+/* Selects the form button */
+input[type="submit"], button {
+  background-color: blue; /* Sets the background color to blue */
+  color: white; /* Sets the text color to white */
+  border: none; /* Removes the border */
+  border-radius: 5px; /* Adds a 5 pixel border radius */
+  padding: 10px; /* Adds 10 pixels of padding */
+  cursor: pointer; /* Changes the cursor to a pointer */
+}
+
+/* Selects all images */
+img {
+  width: 100%; /* Sets the width to 100% */
+  height: auto; /* Sets the height to auto */
+}
+
+/* Selects all block

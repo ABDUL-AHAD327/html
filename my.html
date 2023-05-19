@@ -1,0 +1,1232 @@
+
+<!DOCTYPE html>
+<html lang="en" class="svg no-js">
+<head>
+    <meta charset="utf-8" />
+    <!--[if IE ]>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Language" content="en">
+
+    <title>MySQL :: MySQL Documentation</title>
+    <link rel="stylesheet" media="all" href="https://labs.mysql.com/common/css/main-20230320.min.css" />
+            <link rel="stylesheet" media="all" href="https://labs.mysql.com/common/css/docs-20230320.min.css" />
+    
+    
+    <link rel="stylesheet" media="print" href="https://labs.mysql.com/common/css/print-20230320.min.css" />
+
+    
+    
+    
+    
+    
+    <link rel="shortcut icon" href="https://labs.mysql.com/common/themes/sakila/favicon.ico" />
+    <script async="async" type="text/javascript" src='https://consent.truste.com/notice?domain=oracle.com&c=teconsent&js=bb&noticeType=bb&text=true&cdn=1&pcookie&gtm=1' crossorigin></script>
+    <script src="https://www.oracle.com/assets/truste-oraclelib.js"></script>
+    <script>(function(H){ H.className=H.className.replace(/\bno-js\b/,'js') })(document.documentElement)</script>
+    <script src="https://labs.mysql.com/common/js/site-20221201.min.js"></script>
+
+    
+    
+    <!--[if lt IE 9]>
+        <script src="https://labs.mysql.com/common/js/polyfills/html5shiv-printshiv-3.7.2.min.js"></script>
+        <script src="https://labs.mysql.com/common/js/polyfills/respond-1.4.2.min.js"></script>
+    <![endif]-->
+        <!--[if IE 9]>
+        <style>#docs-sidebar-toc { box-sizing: content-box; }</style>
+    <![endif]-->
+        
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="E6BB6-B37B4-898B7-F97BA-BBCDB",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"E6BB6-B37B4-898B7-F97BA-BBCDB";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="ycgjoes4pieswzbadhyq-f-6e98f4a58-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"34","ak.cp":"1334304","ak.ai":parseInt("802521",10),"ak.ol":"0","ak.cr":93,"ak.ipv":4,"ak.proto":"h2","ak.rid":"dffe21b","ak.r":27110,"ak.a2":n,"ak.m":"dscx","ak.n":"essl","ak.bpcip":"192.140.151.0","ak.cport":45581,"ak.gh":"104.116.245.61","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1679825393","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==x6XkvlyvtWok/VWBBvDsnvSdL8he5MUQuU/ijoP3VD2tL5EHktb9IcwvUK/gUec/khiCvBKwYZcnyGZFIBw/8WzlI5wO+8kxxJAEvThWxCpKtKJ8Rc5ZsF85Raiz9L5+c+laUfGp19YiS73Fn2ENtK8ubltl8e7kmAPQd41Jfg3EIL7TG1VkgoIF67Sk8rzmzD1qhsjrQCvYLK8vz+Xsu0iCuScwaDJ3fIWnklnXUp8rnQwWFqGw/NAOGh0fxFjMfniPG3bv3Q4dbAYdpj1xxtIFqRR1o/AK3CbD22OqPlbyxDBtEnLtlHHjv96E/SVA6xXl+oMfWDszJAiJoaFnjwsztRfr6pSTUczqjEsJm2AiDqY0/FWBX0BOeDBBsEEmS250Hu6nIuvquycfXas6xmvx70KR9xnrkkIF/0nle+Y=","ak.pv":"13","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body class="no-sidebar full-page dev">
+<a class="skip-main" href="#main">Skip to Main Content</a>
+<div class="page-wrapper">
+    <header>
+
+                        <a href="https://dev.mysql.com/" aria-label="MySQL Home" title="MySQL" id="l1-home-link"></a>
+        
+        <div id="l1-nav-container">
+            <div id="l1-line1">
+                <div id="l1-lhs">
+                    <div id="l1-slogan">
+                        The world's most popular open source database
+                    </div>
+                    <div id="l1-search-box">
+                        <form id="l1-search-form" method="get" action="https://www.oracle.com/search/results">
+                        <input type="hidden" name="cat" value="mysql" />
+                        <input type="hidden" name="Ntk" value="SI-ALL5" />
+                        <input id="l1-search-input" type="search" class="icon-search" placeholder="Search" aria-label="Search" name="Ntt" />
+                        </form>
+                    </div>
+                    <div id="l1-auth-links">
+                        <nav aria-label="Contact/Login Navigation" role="navigation">
+                            <a href="https://www.mysql.com/about/contact/"><b>Contact MySQL</b></a>
+                            <span id="l1-contact-separator">&nbsp;|&nbsp;</span>
+                            <span id="l1-contact-separator-br"><br /></span>
+                                                             <a href="https://dev.mysql.com/auth/login/?dest=https%3A%2F%2Fdev.mysql.com%2Fdoc%2F">Login</a> &nbsp;|&nbsp;
+                                 <a href="https://dev.mysql.com/auth/register/">Register</a>
+                                                    </nav>
+                    </div>
+                </div>
+            </div>
+            <div id="l1-line2">
+                <nav aria-label="Primary Navigation" role="navigation">
+                    <ul id="l1-nav">
+                        <li>
+                            <a href="https://www.mysql.com/"><!-- <span class="icon-sakila"></span>  -->MySQL.com</a>
+                        </li><li>
+                            <a href="https://www.mysql.com/downloads/"><!-- <span class="icon-download-thin"></span>  -->Downloads</a>
+                        </li><li class="active">
+                            <a href="/doc/"><!-- <span class="icon-books"></span>  -->Documentation</a>
+                        </li><li>
+                            <a href="/"><!-- <span class="icon-code"></span>  -->Developer Zone</a>
+                        </li>                    </ul>
+                </nav>
+                <div class="social-icons">
+                    <nav aria-label="Social Navigation" role="navigation">
+                        <a aria-label="Join us on Facebook" title="Join us on Facebook" href="http://www.facebook.com/mysql"><span class="icon-facebook"></span></a>
+                        <a aria-label="Follow us on Twitter" title="Follow us on Twitter" href="https://twitter.com/mysql"><span class="icon-twitter"></span></a>
+                        <a aria-label="Follow us on LinkedIn" title="Follow us on LinkedIn" href="https://www.linkedin.com/company/mysql"><span class="icon-linkedin"></span></a>
+                        <a aria-label="Visit our YouTube channel" title="Visit our YouTube channel" href="http://www.youtube.com/mysqlchannel"><span class="icon-youtube"></span></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="sub-header">
+            <div id="l2-nav-container">
+                <div id="l2-nav-toggle">
+                    <span class="icon-three-bars"></span>
+                </div>
+                                                                                        <a class="button nav-button-3" href="/"><span class="icon-code"></span> Developer Zone</a>
+                                                                                                                                    <a class="button nav-button-2" href="https://www.mysql.com/downloads/"><span class="icon-download-thin"></span> Downloads</a>
+                                                                                                <a class="button nav-button-1" href="https://www.mysql.com/"><span class="icon-sakila"></span> MySQL.com</a>
+                                                                        <div id="l2-search-toggle">
+                    <span class="icon-search"></span>
+                </div>
+                <div id="l2-site-icon">
+                                                                                                                                                                                                    <span class="icon-books"></span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
+                <div id="l1-section-title">
+                    <span id="l1-section-label">
+                        <a href="/doc/">Documentation</a>
+                    </span>
+                </div>
+                <nav aria-label="Secondary Navigation" role="navigation">
+                    
+
+<ul id="l2-nav">
+            	<li class=""><a  href="/doc/refman/en/">MySQL Server</a>
+    			</li>
+	        	<li class=""><a  href="/doc/index-enterprise.html">MySQL Enterprise</a>
+    			</li>
+	        	<li class=""><a  href="/doc/workbench/en/">Workbench</a>
+    			</li>
+	        	<li class=""><a  href="/doc/mysql-shell/en/mysql-innodb-cluster.html">InnoDB Cluster</a>
+    			</li>
+	        	<li class=""><a  href="/doc/index-cluster.html">MySQL NDB Cluster</a>
+    			</li>
+	        	<li class=""><a  href="/doc/index-connectors.html">Connectors</a>
+    			</li>
+	        	<li class=" last"><a  href="/doc/index-other.html">More</a>
+    			</li>
+	                        <li class="other-section"><a href="https://www.mysql.com/">MySQL.com</a></li>
+                            <li class="other-section"><a href="https://www.mysql.com/downloads/">Downloads</a></li>
+                                        <li class="other-section"><a href="/">Developer Zone</a></li>
+            </ul>
+                </nav>
+            </div>
+            <div id="l3-search-container"></div>
+            <div id="top-orange"><span id="section-nav">Section Menu: &nbsp; </span></div>
+        </div>
+    </header>
+        <div id="page">
+                        <div role="main" id="main" tabindex="-1">
+
+            
+                
+<div class="fp-docs-container" id="fp-docs-banner">
+    <div class="fp-docs-row">
+        <div class="fp-docs-banner-heading">MySQL Documentation</div>
+
+        <div id="mds-banner">
+            <div class="mds-banner-col1">
+                <div class="mds-banner-header">MySQL HeatWave</div>
+                <div class="mds-banner-sub-header">One MySQL Database service for<br/>OLTP, OLAP, and ML—without ETL</div>
+
+                <div class="cbtn" style="display: inline-block; width: auto;">
+                    <div>
+                        <a href="https://docs.cloud.oracle.com/en-us/iaas/mysql-database/doc/getting-started.html">MySQL Docs</a>
+                    </div>
+                </div>
+                <div class="cbtn"  style="display: inline-block; width: auto;">
+                    <div>
+                        <a href="https://docs.cloud.oracle.com/en-us/iaas/mysql-database/doc/heatwave.html">HeatWave Docs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mds-banner-col2">
+                <div class="mds-banner-list-col1">
+                    <h2>Unmatched price performance</h2>
+                    <ul>
+                        <li>6.5X faster than Redshift at half the cost</li>
+                        <li>7X faster than Snowflake at 20% the cost</li>
+                        <li>1,400X faster than Aurora at half the cost</li>
+                    </ul>
+                    <h2>Available on OCI, AWS, and Azure</h2>
+                </div>
+                <div class="mds-banner-list-col2-3">
+                    <div id="fp-docs-hwdev-con">
+                        <h2>MySQL HeatWave developer resources</h2>
+        
+                        <p><a href="https://www.mysql.com/cloud/developer/">Build applications</a> for popular use cases with step-by-step instructions and code samples.</p>
+        
+                        <p>Download the new 
+                        <a href="https://marketplace.visualstudio.com/items?itemName=Oracle.mysql-shell-for-vs-code">MySQL Shell for VS Code</a> and 
+                        <a href="/downloads/workbench/">MySQL Workbench</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+
+        <div>
+            <a class="fp-docs-banner-btn" href="/doc/refman/8.0/en/"><span>MySQL 8.0</span>Reference Manual</a>
+            <a class="fp-docs-banner-btn" href="/doc/relnotes/mysql/8.0/en/"><span>MySQL 8.0</span>Release Notes</a>
+            <div id="fp-docs-search-container">
+                <div id="fp-docs-search-box">
+                    <form name="s" id="s" method="get" action="/doc/search/">
+                        <input type="text" name="q" id="q" value="Search Current Documentation"
+                            onfocus="if(this.value == 'Search Current Documentation') {this.value='';this.style.color='#555';}"
+                            onblur="if(this.value == '') {this.value='Search Current Documentation';this.style.color='#bbb';}" />
+
+                        <button class="fp-docs-search-btn" title="Search" type="submit">
+                            <span class="icon-search"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="fp-docs-anchor" id="product">
+    <div class="fp-docs-anchor" id="topic">
+            <div class="fp-docs-container" id="fp-docs-browse">
+    <div class="fp-docs-row">
+        <div>Browse MySQL Documentation by:
+            <a href="#product" class="fp-docs-list-btn active" id="fp-product-link">Product</a>
+            <a href="#topic" class="fp-docs-list-btn" id="fp-topic-link">Topic</a>
+            <a href="#cloud" class="fp-docs-list-btn" id="fp-cloud-link">Cloud</a>
+        </div>
+    </div>
+</div>
+
+<!-- Images (if any) to be put in /doc/images/  -->
+
+<div class="fp-docs-container" style="padding-top: 15px;">
+    <div class="fp-docs-row">
+        <!-- #product tab -->
+        <div id="fp-docs-products">
+            <div id="fp-docs-product-col1"> <!-- Left column -->
+                <!-- #product: Cloud Guides -->
+                <div class="fp-docs-link-header">
+                    Cloud Guides<br/>
+                    <span style="font-size: 8pt; font-weight: normal; font-style: italic; color: dimgray">User guides for various cloud services</span>
+                </div>
+                <div class="line">
+                    <a href="https://docs.oracle.com/en-us/iaas/mysql-database/index.html">MySQL Database Service on OCI</a>
+                </div>
+                <div class="line">
+                    <a href="/doc/heatwave-aws/en/">MySQL HeatWave on AWS</a>
+                </div>
+                <div class="line">
+                    <a href="https://docs.oracle.com/en-us/iaas/odsaz/odsa-provisioning-mysql-heatwave.html">MySQL HeatWave for Azure</a>
+                </div>
+                <div class="line">
+                    <a href="/doc/heatwave/en/">MySQL HeatWave</a>
+                </div>
+                <div class="line">
+                    <a href="/doc/refman/8.0/en/mysql-oci-marketplace.html">MySQL on OCI Marketplace</a>
+                </div>
+                <!-- #product: Cloud Release Notes -->
+                <div class="fp-docs-link-header">
+                    Cloud Release Notes<br/>
+                    <span style="font-size: 8pt; font-weight: normal; font-style: italic; color: dimgray">Release notes for various cloud services</span>
+                </div>
+                <div class="line">
+                    <a href="https://docs.oracle.com/en-us/iaas/releasenotes/services/mysql-database/">MySQL Database Service on OCI</a>
+                </div>
+                <!-- AWS
+                <div class="line">
+                    <a href="/doc/relnotes/heatwave-aws/en/">MySQL HeatWave on AWS Release Notes</a>
+                </div>
+                -->
+                <div class="line">
+                    <a href="https://docs.oracle.com/en-us/iaas/releasenotes/changes/3a52168c-6b05-4943-81ed-7b515b7d9124/">MySQL HeatWave for Azure</a>
+                </div>
+                <div class="line">
+                    <a href="/doc/relnotes/heatwave/en/">MySQL HeatWave</a>
+                </div>
+                
+                <!-- #product: MySQL Enterprise -->
+                <div class="fp-docs-link-header" id="mysql-enterprise">MySQL Enterprise</div>         
+                <div class="fp-docs-links">
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">MySQL Enterprise Monitor <span class="icon-plus-square"></span></a>
+                    </div>
+                    <div class="fp-docs-expandable-links">
+                    <div class="line">
+                          <a href="/doc/mysql-monitor/8.0/en/">MySQL Enterprise Monitor 8.0</a>
+                          <a class="docs-dl" id="d-1-225" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                      </div>
+                    </div>
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">MySQL Enterprise Backup <span class="icon-plus-square"></span></a>
+                    </div>
+                    <div class="fp-docs-expandable-links">
+                        <div class="line">
+                            <a href="/doc/mysql-enterprise-backup/8.0/en/">MySQL Enterprise Backup 8.0</a>
+                            <a class="docs-dl" id="d-1-223" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                        <div class="line">
+                            <a href="/doc/mysql-enterprise-backup/4.1/en/">MySQL Enterprise Backup 4.1</a>
+                            <a class="docs-dl" id="d-1-209" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                        <div class="line">
+                            <a href="/doc/mysql-enterprise-backup/3.12/en/">MySQL Enterprise Backup 3.12</a>
+                            <a class="docs-dl" id="d-1-174" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/mysql-em-plugin/en/">Oracle Enterprise Manager for MySQL Database</a>
+                        <a class="docs-dl" id="d-1-168" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/refman/en/mysql-enterprise-security.html">MySQL Enterprise Security</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/refman/en/enterprise-encryption.html">MySQL Enterprise Encryption</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/refman/en/mysql-enterprise-audit.html">MySQL Enterprise Audit</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/refman/en/mysql-enterprise-firewall.html">MySQL Enterprise Firewall</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/refman/en/mysql-enterprise-thread-pool.html">MySQL Enterprise Thread Pool</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/refman/en/mysql-enterprise-data-masking.html">MySQL Enterprise Data Masking and De-Identification</a>
+                    </div>
+                </div>
+                
+                <!-- #product: High Availability, Replication, and Scalability Solutions -->
+                <div class="fp-docs-link-header" id="ha-scalability">
+                  High Availability, Replication, and Scalability Solutions
+                </div>
+                <div class="fp-docs-links">
+                      <div class="line">
+                        <a href="/doc/mysql-shell/en/admin-api-userguide.html">MySQL AdminAPI</a>
+                      </div>
+                      <div class="line">
+                        <a href="/doc/mysql-shell/en/mysql-innodb-cluster.html">MySQL InnoDB Cluster</a>
+                      </div>
+                      <div class="line">
+                        <a href="/doc/mysql-shell/en/innodb-clusterset.html">MySQL InnoDB ClusterSet</a>
+                      </div>
+                      <div class="line">
+                        <a href="/doc/mysql-shell/en/mysql-innodb-replicaset.html">MySQL InnoDB ReplicaSet</a>
+                      </div>
+                      <div class="line">
+                        <a href="/doc/refman/en/replication.html">Replication</a>
+                        <a class="docs-dl" id="d-2-245" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                      </div>
+                      <div class="line">
+                        <a href="/doc/refman/en/group-replication.html">Group Replication</a>
+                      </div>
+                      <div class="line">
+                        <a href="/doc/refman/en/replication-semisync.html">Semisynchronous Replication</a>
+                      </div>
+                      <div class="line">
+                        <a href="/doc/mysql-operator/en/">MySQL Operator for Kubernetes</a>
+                        <a class="docs-dl" id="d-1-281" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                      </div>
+                      <div class="line">
+                          <a href="/doc/mysql-router/8.0/en/">MySQL Router</a>
+                      </div>
+                      <div class="line">
+                        <a href="/doc/refman/8.0/en/mysql-cluster.html">MySQL NDB Cluster 8.0 (GA)</a>
+                        <a class="docs-dl" id="d-2-257" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                      </div>
+                      <div class="line">
+                        <a href="/doc/refman/5.7/en/mysql-cluster.html">MySQL NDB Cluster 7.5/7.6 (GA)</a>
+                        <a class="docs-dl" id="d-2-200" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                      </div>
+                </div>
+                
+                <!-- #product: Installation -->
+                <div class="fp-docs-link-header" id="installation">
+                  Installation
+                </div>
+                <div class="fp-docs-links">
+                    <div class="line">
+                        <a href="/doc/mysql-yum-repo-quick-guide/en/">Using the MySQL Yum Repository</a>
+                        <a class="docs-dl" id="d-1-44" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/mysql-apt-repo-quick-guide/en/">Using the MySQL APT Repository</a>
+                        <a class="docs-dl" id="d-1-39" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/mysql-sles-repo-quick-guide/en/">Using the MySQL SLES Repository</a>
+                        <a class="docs-dl" id="d-1-170" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/mysql-installer/en/">MySQL Installer</a>
+                        <a class="docs-dl" id="d-1-43" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">Secure Deployment Guide <span class="icon-plus-square"></span></a>
+                    </div>
+                    <div class="fp-docs-expandable-links">
+                        <div class="line">
+                            <a href="/doc/mysql-secure-deployment-guide/8.0/en/">Secure Deployment Guide 8.0</a>
+                            <a class="docs-dl" id="d-2-242" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                        <div class="line">
+                            <a href="/doc/mysql-secure-deployment-guide/5.7/en/">Secure Deployment Guide 5.7</a>
+                            <a class="docs-dl" id="d-2-222" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- #product: Other Guides -->
+                <div class="fp-docs-link-header" id="other-guides">
+                  Other Guides
+                </div>
+                <div class="fp-docs-links">
+                    <div class="line">
+                        <a href="/doc/mysql-compat-matrix/en/">MySQL Server-Tool Compatibility</a>
+                        <a class="docs-dl" id="d-1-227" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/mysql-port-reference/en/">MySQL Port Reference</a>
+                        <a class="docs-dl" id="d-1-253" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+
+            <div id="fp-docs-product-col2"> <!-- Middle column -->
+
+                <!-- #product: MySQL Server and MySQL Cluster -->              
+                <div class="fp-docs-link-header">MySQL Server &amp; MySQL Cluster<br/>
+                    <span style="font-size: 8pt; font-weight: normal; font-style: italic; color: dimgray">MySQL Reference Manual, MySQL NDB Cluster guides</span>
+                </div>
+                <div class="fp-docs-links">
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">MySQL Reference Manual (incl. MySQL Cluster) <span class="icon-plus-square"></span></a>
+                    </div>
+                    <div class="fp-docs-expandable-links">
+                        <div class="line">
+                            <a href="/doc/refman/8.0/en/">MySQL 8.0 Reference Manual</a>
+                            <a class="docs-dl" id="d-1-201" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                        <div class="line">
+                            <a href="/doc/refman/8.0/ja/">MySQL 8.0 Reference Manual (Japanese)</a>
+                            <a class="docs-dl" id="d-1-276" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                        <div class="line">
+                            <a href="/doc/refman/5.7/en/">MySQL 5.7 Reference Manual</a>
+                            <a class="docs-dl" id="d-1-12" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/mysqld-version-reference/en/">MySQL Version Reference</a>
+                        <a class="docs-dl" id="d-1-45" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">MySQL Error Reference <span class="icon-plus-square"></span></a>
+                    </div>
+                    <div class="fp-docs-expandable-links">
+                        <div class="line">
+                            <a href="/doc/mysql-errors/8.0/en/">MySQL 8.0 Error Reference</a>
+                            <a class="docs-dl" id="d-1-260" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                        <div class="line">
+                            <a href="/doc/mysql-errors/5.7/en/">MySQL 5.7 Error Reference</a>
+                            <a class="docs-dl" id="d-1-261" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>                        
+                    </div>
+                    <div class="line">
+                        <a href="/doc/ndbapi/en/">NDB Cluster API Developer Guide</a>
+                        <a class="docs-dl" id="d-1-47" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/ndb-internals/en/">NDB Cluster Internals Manual</a>
+                        <a class="docs-dl" id="d-1-206" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">MySQL Cluster Manager <span class="icon-plus-square"></span></a>
+                    </div>
+                    <div class="fp-docs-expandable-links">
+                        <div class="line">
+                            <a href="/doc/mysql-cluster-manager/8.0/en/">MySQL Cluster Manager 8.0</a>
+                            <a class="docs-dl" id="d-1-279" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                        <div class="line">
+                            <a href="/doc/mysql-cluster-manager/1.4/en/">MySQL Cluster Manager 1.4</a>
+                            <a class="docs-dl" id="d-1-185" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- #product: MySQL Workbench, Shell, Router -->
+                <div class="fp-docs-link-header">MySQL Workbench, Shell, Router<br/>
+                    <span style="font-size: 8pt; font-weight: normal; font-style: italic; color: dimgray">MySQL client tools and middleware</span>
+                </div>
+                <div class="fp-docs-links">
+                    <div class="line">
+                        <a href="/doc/workbench/en/">MySQL Workbench</a>
+                        <a class="docs-dl" id="d-1-22" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                </div>
+                <div class="fp-docs-links">
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">MySQL Shell<span class="icon-plus-square"></span></a>
+                    </div>
+                    <div class="fp-docs-expandable-links">
+                        <div class="line">
+                            <a href="/doc/mysql-shell/en/">MySQL Shell User Guide</a>
+                            <a class="docs-dl" id="d-1-252" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                        <div class="line">
+                            <a href="/doc/mysql-shell/8.0/ja/">MySQL Shell User Guide (Japanese)</a>
+                            <a class="docs-dl" id="d-1-277" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fp-docs-links">
+                    <div class="line">
+                        <a href="/doc/mysql-shell-gui/en/">MySQL Shell for VS Code</a>
+                    </div>
+                </div>
+                <div class="fp-docs-links">
+                    <div class="line">
+                        <a href="/doc/mysql-router/en/">MySQL Router</a>
+                        <a class="docs-dl" id="d-1-219" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                </div>
+
+                <!-- #product: Connectors & APIs -->
+                <div class="fp-docs-link-header" id="connectors-apis">Connectors &amp; APIs<br/>
+                    <span style="font-size: 8pt; font-weight: normal; font-style: italic; color: dimgray">Database drivers and APIs</span>
+                </div>
+                <div class="fp-docs-links">
+                    <!--
+                    <div class="line">
+                        <a href="/doc/connectors/en/">Connectors and APIs</a>
+                        <a class="docs-dl" id="d-1-25" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    -->
+                    <div class="line">
+                        <a href="/doc/connector-j/en/">Connector/J</a>
+                        <a class="docs-dl" id="d-1-218" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/connector-odbc/en/">Connector/ODBC</a>
+                        <a class="docs-dl" id="d-1-32" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">Connector/NET <span class="icon-plus-square"></span></a>
+                    </div>
+                    <div class="fp-docs-expandable-links">
+                        <div class="line">
+                            <a href="/doc/connector-net/en/">Developer Guide</a>
+                            <a class="docs-dl" id="d-1-31" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                        <div class="line">
+                            <a href="/doc/dev/connector-net/8.0/">8.0 API Reference</a>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/connector-python/en/">Connector/Python</a>
+                        <a class="docs-dl" id="d-1-34" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/apis-php/en/">PHP</a>
+                        <a class="docs-dl" id="d-1-26" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">C API <span class="icon-plus-square"></span></a>
+                    </div>
+                    <div class="fp-docs-expandable-links">
+                        <div class="line">
+                            <a href="/doc/c-api/8.0/en/">C API 8.0</a>
+                            <a class="docs-dl" id="d-1-265" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                        <div class="line">
+                            <a href="/doc/c-api/5.7/en/">C API 5.7</a>
+                            <a class="docs-dl" id="d-1-264" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">Connector/C++ <span class="icon-plus-square"></span></a>
+                    </div>
+                    <div class="fp-docs-expandable-links">
+                        <div class="line">
+                            <a href="/doc/connector-cpp/8.0/en/">Connector/C++ 8.0</a>
+                            <a class="docs-dl" id="d-1-249" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                        <div class="line">
+                            <a href="/doc/connector-cpp/1.1/en/">Connector/C++ 1.1</a>
+                            <a class="docs-dl" id="d-1-248" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/visual-studio/en/">MySQL for Visual Studio</a>
+                        <a class="docs-dl" id="d-1-196" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                </div>
+                
+                <!-- #product: X DevAPI -->
+                <div class="fp-docs-link-header">X DevAPI<br/>
+                    <span style="font-size: 8pt; font-weight: normal; font-style: italic; color: dimgray">API for MySQL Shell and Connectors supporting the X Protocol</span>
+                </div>
+                <div class="fp-docs-links">
+                    <div class="line">
+                        <a href="/doc/x-devapi-userguide/en/">X DevAPI User Guide</a>
+                        <a class="docs-dl" id="d-1-194" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/x-devapi-userguide-shell-js/en/">X DevAPI User Guide for MySQL Shell in JavaScript Mode</a>
+                        <a class="docs-dl" id="d-1-258" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/x-devapi-userguide-shell-python/en/">X DevAPI User Guide for MySQL Shell in Python Mode</a>
+                        <a class="docs-dl" id="d-1-259" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/dev/connector-cpp/8.0/">MySQL Connector/C++ X DevAPI Reference</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/dev/connector-j/8.0/">MySQL Connector/J X DevAPI Reference</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/dev/connector-net/8.0/">MySQL Connector/NET Reference with X DevAPI</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/dev/connector-nodejs/8.0/">MySQL Connector/Node.js X DevAPI Reference</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/dev/connector-python/8.0/">MySQL Connector/Python X DevAPI Reference</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/dev/mysqlsh-api-javascript/8.0/">MySQL Shell 8.0 JavaScript API Reference</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/dev/mysqlsh-api-python/8.0/">MySQL Shell 8.0 Python API Reference</a>
+                    </div>
+                </div>
+                
+                <!-- #product: Expert Guides -->
+                <div class="fp-docs-link-header">Expert Guides</div>
+                <div class="fp-docs-links">
+                    <div class="line">
+                        <a href="/doc/dev/mysql-server/latest/">MySQL Server Doxygen Documentation</a>
+                    </div>
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">Extending MySQL <span class="icon-plus-square"></span></a>
+                    </div>
+                    <div class="fp-docs-expandable-links">
+                        <div class="line">
+                            <a href="/doc/extending-mysql/8.0/en/">Extending MySQL 8.0</a>
+                            <a class="docs-dl" id="d-1-268" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                        <div class="line">
+                            <a href="/doc/extending-mysql/5.7/en/">Extending MySQL 5.7</a>
+                            <a class="docs-dl" id="d-1-267" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/dev/mysql-server/latest/PAGE_MYSQL_TEST_RUN.html">MySQL Test Framework 2.0</a>
+                        <a class="docs-dl" id="d-1-54" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- #product: Current release notes -->
+            <div id="fp-docs-product-col3"> <!-- Right column -->
+                <div class="fp-docs-link-header" id="current-release-notes">
+                    Current Release Notes
+                </div>
+                <div class="fp-docs-links">
+                    <div class="line">
+                        <a href="/doc/relnotes/mysql/8.0/en/news-8-0-32.html">MySQL 8.0.32</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/mysql-cluster/8.0/en/news-8-0-32.html">MySQL Cluster (NDB) 8.0.32</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/mysql-shell/8.0/en/news-8-0-32.html">MySQL Shell 8.0.32</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/mysql-enterprise-backup/8.0/en/news-8-0-32.html">MySQL Enterprise Backup 8.0.32</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/mysql-router/en/news-8-0-32.html">MySQL Router 8.0.32</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/mysql-operator/en/news-8-0-32-2.0.8.html">MySQL Operator 8.0.32</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/workbench/en/news-8-0-32.html">MySQL Workbench 8.0.32</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/connector-cpp/en/news-8-0-32.html">MySQL Connector/C++ 8.0.32</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/connector-j/8.0/en/news-8-0-32.html">MySQL Connector/J 8.0.32</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/connector-net/en/news-8-0-32.html">MySQL Connector/NET 8.0.32</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/connector-nodejs/en/news-8-0-32.html">MySQL Connector/Node.js 8.0.32</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/connector-odbc/en/news-8-0-32.html">MySQL Connector/ODBC 8.0.32</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/connector-python/en/news-8-0-32.html">MySQL Connector/Python 8.0.32</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/mysql-cluster-manager/8.0/en/news-8-0-32.html">MySQL Cluster Manager 8.0.32</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/ndb-operator/en/news-8-0-32.html">MySQL NDB Operator 8.0.32</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/mysql/5.7/en/news-5-7-41.html">MySQL 5.7.41</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/mysql-cluster/7.6/en/news-7-6-25.html">MySQL Cluster (NDB) 7.6.25</a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/mysql-cluster/7.5/en/news-7-5-29.html">MySQL Cluster (NDB) 7.5.29</a>
+                    </div>
+                </div>
+                
+                <!-- #product: All release notes -->
+                <div class="fp-docs-link-header">All Release Notes</div>
+                <div class="fp-docs-links">
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">MySQL Release Notes <span class="icon-plus-square"></span></a>
+                    </div>
+                    <div class="fp-docs-expandable-links">
+                        <div class="line">
+                            <a href="/doc/relnotes/mysql/8.0/en/">MySQL 8.0 Release Notes</a>
+                            <a class="docs-dl" id="d-3-202" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                        <div class="line">
+                            <a href="/doc/relnotes/mysql/5.7/en/">MySQL 5.7 Release Notes</a>
+                            <a class="docs-dl" id="d-3-145" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">NDB Cluster Release Notes <span class="icon-plus-square"></span></a>
+                    </div>
+                  <div class="fp-docs-expandable-links">
+                    <div class="line">
+                      <a href="/doc/relnotes/mysql-cluster/8.0/en/">NDB Cluster 8.0 Release Notes</a>
+                      <a class="docs-dl" id="d-3-254" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                      <a href="/doc/relnotes/mysql-cluster/7.6/en/">NDB Cluster 7.6 Release Notes</a>
+                      <a class="docs-dl" id="d-3-214" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                        <div class="line">
+                            <a href="/doc/relnotes/mysql-cluster/7.5/en/">NDB Cluster 7.5 Release Notes</a>
+                            <a class="docs-dl" id="d-3-187" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">MySQL Cluster Manager Release Notes <span class="icon-plus-square"></span></a>
+                    </div>
+                    <div class="fp-docs-expandable-links">
+                        <div class="line">
+                            <a href="/doc/relnotes/mysql-cluster-manager/8.0/en/">MySQL Cluster Manager 8.0 Release Notes</a>
+                            <a class="docs-dl" id="d-3-280" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                        <div class="line">
+                            <a href="/doc/relnotes/mysql-cluster-manager/1.4/en/">MySQL Cluster Manager 1.4 Release Notes</a>
+                            <a class="docs-dl" id="d-3-186" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                        </div>
+                    </div>
+                  <div class="line">
+                         <a href="/doc/relnotes/ndb-operator/en/">MySQL NDB Operator Release Notes</a>
+                         <a class="docs-dl" id="d-3-287" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                   </div>
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">MySQL Enterprise Monitor Release Notes <span class="icon-plus-square"></span></a>
+                    </div>
+                    <div class="fp-docs-expandable-links">
+                    <div class="line">
+                          <a href="/doc/relnotes/mysql-monitor/8.0/en/">MySQL Enterprise Monitor 8.0 Release Notes</a>
+                          <a class="docs-dl" id="d-3-224" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                      </div>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/mysql-em-plugin/en/myoem-release-notes.html">Oracle Enterprise Manager for MySQL Database Release Notes</a>
+                    </div>
+                    <div class="line">
+                        <a href="" class="fp-docs-sec-link">MySQL Enterprise Backup Release Notes <span class="icon-plus-square"></span></a>
+                    </div>
+                  <div class="fp-docs-expandable-links">
+                    <div class="line">
+                      <a href="/doc/relnotes/mysql-enterprise-backup/8.0/en/">MySQL Enterprise Backup 8.0 Release Notes</a>
+                      <a class="docs-dl" id="d-3-226" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                      <a href="/doc/relnotes/mysql-enterprise-backup/4.1/en/">MySQL Enterprise Backup 4.1 Release Notes</a>
+                      <a class="docs-dl" id="d-3-210" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                      <a href="/doc/relnotes/mysql-enterprise-backup/3.12/en/">MySQL Enterprise Backup 3.12 Release Notes</a>
+                      <a class="docs-dl" id="d-3-175" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                  </div>
+                  <div class="line">
+                    <a href="" class="fp-docs-sec-link">MySQL Shell Release Notes <span class="icon-plus-square"></span></a>
+                  </div>
+                  <div class="fp-docs-expandable-links">
+                    <div class="line">
+                      <a href="/doc/relnotes/mysql-shell/8.0/en/">MySQL Shell 8.0 Release Notes</a>
+                      <a class="docs-dl" id="d-3-216" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                    <a href="/doc/relnotes/mysql-shell/1.0/en/">MySQL Shell 1.0 Release Notes</a>
+                    <a class="docs-dl" id="d-3-198" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                  </div>
+                  <div class="line">
+                         <a href="/doc/relnotes/connector-j/en/">Connector/J Release Notes</a>
+                         <a class="docs-dl" id="d-3-217" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                   </div>
+                   <div class="line">
+                        <a href="/doc/relnotes/connector-odbc/en/">Connector/ODBC Release Notes</a>
+                        <a class="docs-dl" id="d-3-139" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/connector-net/en/">Connector/NET Release Notes</a>
+                        <a class="docs-dl" id="d-3-138" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/connector-nodejs/en/">Connector/Node.js Release Notes</a>
+                        <a class="docs-dl" id="d-3-195" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/connector-python/en/">Connector/Python Release Notes</a>
+                        <a class="docs-dl" id="d-3-140" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/connector-cpp/en/">Connector/C++ Release Notes</a>
+                        <a class="docs-dl" id="d-3-135" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/mysql-installer/en/">MySQL Installer Release Notes</a>
+                        <a class="docs-dl" id="d-3-155" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/mysql-for-visual-studio/en/">MySQL for Visual Studio Release Notes</a>
+                        <a class="docs-dl" id="d-3-178" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/workbench/en/">MySQL Workbench Release Notes</a>
+                        <a class="docs-dl" id="d-3-159" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/mysql-router/en/">MySQL Router Release Notes</a>
+                        <a class="docs-dl" id="d-3-179" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                    <div class="line">
+                        <a href="/doc/relnotes/mysql-operator/en/">MySQL Operator for Kubernetes</a>
+                        <a class="docs-dl" id="d-3-284" href="" title="Download Options"><span class="icon-download-thin"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <!-- #topic tab -->
+        <div id="fp-docs-topics">
+            <div id="fp-docs-topic-col1">
+            <!-- #topic: Administrator Guides -->
+            <div class="fp-docs-link-header">Administrator Guides</div>
+            <div class="fp-docs-links">
+                <div class="line">
+                    Content has moved <a class="fp-docs-hashchange" href="#product">here</a>
+                </div>
+            </div>
+            </div>
+            
+            <!-- #topic: Developers & Functionality -->
+            <div id="fp-docs-topic-col2">
+                <div class="fp-docs-link-header">Developers &amp; Functionality</div>
+                <div class="fp-docs-links">
+                    <div class="line">
+                        Content has moved <a class="fp-docs-hashchange" href="#product">here</a>
+                    </div>
+                </div>
+            </div>        
+            
+            <div id="fp-docs-topic-col3">
+                <!-- topic: MySQL Enterprise (now in the #product tab) -->
+                <div class="fp-docs-link-header">MySQL Enterprise</div>
+                <div class="fp-docs-links">
+                    <div class="line">
+                        Content has moved <a class="fp-docs-hashchange" href="#product">here</a>
+                    </div>
+                </div>
+                <!-- #topic: Connectors -->
+                <div class="fp-docs-link-header">Connectors &amp; APIs</div>
+                <div class="fp-docs-links">
+                    <div class="line">
+                        Content has moved <a class="fp-docs-hashchange" href="#product">here</a>
+                    </div>
+                </div>
+                <!-- #topic: HA/Scalability (now in the #product tab) -->
+                <div class="fp-docs-link-header">HA/Scalability</div>
+                <div class="fp-docs-links">
+                    <div class="line">
+                        Content has moved <a class="fp-docs-hashchange" href="#product">here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- #cloud tab -->
+        <div id="fp-docs-cloud">
+                        
+            <div id="fp-docs-cloud-col1">
+                <div class="fp-docs-links">
+                    <div class="line">
+                        Content has moved <a class="fp-docs-hashchange" href="#product">here</a>
+                    </div>
+                </div>
+            </div>
+            <div id="fp-docs-cloud-col2">
+                <div class="fp-docs-links">
+                    <div class="line">
+                        Content has moved <a class="fp-docs-hashchange" href="#product">here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br style="clear: both;" />
+    </div>
+</div> 
+
+        </div>
+</div>
+<div id="fp-docs-dl">
+    <div class="fp-docs-dl-header"><span id="fp-docs-dl-type">Download this Manual</span>
+        <a href="" class="fp-docs-dl-close" title="Close"><span class="icon-x"></span></a>
+    </div>
+    <div id="fp-docs-dl-links"></div>
+    <div id="fp-docs-dl-loading"><span class="icon-spinner pulse"></span></div>
+</div>
+
+<script>
+$(function() {
+    $(".fp-docs-sec-link").click( function(e) {
+        var icon = $(this).find('span');
+        var parent = $(this).parent();
+        var expandable = parent.next('.fp-docs-expandable-links');
+        if (expandable.is(':hidden')) {
+            parent.addClass('fp-docs-links-no-bb');
+            icon.removeClass('icon-plus-square').addClass('icon-minus-square');
+            expandable.slideDown('fast', function() {});
+        } else {
+            expandable.slideUp('fast', function() {
+                parent.removeClass('fp-docs-links-no-bb');
+                icon.removeClass('icon-minus-square').addClass('icon-plus-square');
+            });
+        }
+        e.stopPropagation();
+        return false;
+    });
+
+    $(".fp-docs-dl-close").click( function(e) {
+        $('#fp-docs-dl').hide();
+        e.stopPropagation();
+        return false;
+    });
+
+    $(".docs-dl").click( function(e) {
+        $('#fp-docs-dl-links').hide();
+        $('#fp-docs-dl-loading').show();
+        var parts = $(this).attr('id').split('-');
+        var type = parts[1];
+        if (type == 3) {
+            $('#fp-docs-dl-type').html('Download these Release Notes');
+        } else if (type == 2) {
+            $('#fp-docs-dl-type').html('Download this Excerpt');
+        } else {
+            $('#fp-docs-dl-type').html('Download this Manual');
+        }
+        var id = parts[2];
+        var docsdl = $('#fp-docs-dl');
+        var width = docsdl.outerWidth();
+        docsdl.css('display', 'inline-block')
+              .css('left',(e.pageX - width - 20) + 'px')
+              .css('top',(e.pageY - 15) + 'px' );
+
+        var err = 'Unable to load documentation downloads for this manual at this time.';
+
+        $.ajax({
+            type: 'GET',
+            url: '/doc/get-downloads/',
+            data: { 'id' : id },
+            dataType: 'json',
+            success: function(data, msg) {
+                if (!data['success']) {
+                    $('#fp-docs-dl-loading').hide();
+                    $('#fp-docs-dl-links').html(err).show();
+                } else {
+                    $('#fp-docs-dl-loading').hide();
+                    $('#fp-docs-dl-links').html(data['results']).show();
+                }
+            },
+            error: function(xhr, status_text, error_thrown){
+                $('#fp-docs-dl-loading').hide();
+                $('#fp-docs-dl-links').html(err).show();
+            }
+        });
+
+        e.stopPropagation();
+        return false;
+    });
+
+    $("#fp-topic-link, #fp-product-link, #fp-cloud-link").click( function(e) {
+        var current = $('#fp-docs-browse').find('a.active');
+        var currentId = $(current).attr('id');
+        var clickedId = $(this).attr('id');
+        var hide = '';
+        switch (currentId) {
+            case 'fp-product-link':
+                hide = '#fp-docs-products';
+                break;
+            case 'fp-topic-link':
+                hide = '#fp-docs-topics';
+                break;
+            case 'fp-cloud-link':
+                hide = '#fp-docs-cloud';
+                break;
+        }
+        var show = '';
+        switch (clickedId) {
+            case 'fp-product-link':
+                show = '#fp-docs-products';
+                break;
+            case 'fp-topic-link':
+                show = '#fp-docs-topics';
+                break;
+            case 'fp-cloud-link':
+                show = '#fp-docs-cloud';
+                break;
+        }
+        $(this).addClass('active');
+        $(current).removeClass('active');
+        $(hide).fadeOut('fast', function(){
+            $(show).fadeIn('fast');
+        });
+        return false;
+    });
+
+    $(window).hashchange(function() {
+        var hash = location.hash;
+        if (hash == '#topic') {
+            $("#fp-topic-link").addClass('active');
+            $('#fp-product-link').removeClass('active');
+            $('#fp-cloud-link').removeClass('active');
+            $('#fp-docs-cloud').hide();
+            $('#fp-docs-products').hide();
+            $('#fp-docs-topics').show();
+        }
+        if (hash == '#product') {
+            $('#fp-product-link').addClass('active');
+            $("#fp-topic-link").removeClass('active');
+            $('#fp-cloud-link').removeClass('active');
+            $('#fp-docs-cloud').hide();
+            $('#fp-docs-topics').hide();
+            $('#fp-docs-products').show();
+        }
+        if (hash == '#cloud') {
+            $('#fp-cloud-link').addClass('active');
+            $('#fp-product-link').removeClass('active');
+            $("#fp-topic-link").removeClass('active');
+            $('#fp-docs-topics').hide();
+            $('#fp-docs-products').hide();
+            $('#fp-docs-cloud').show();
+        }
+        if (hash == '#current-release-notes') {
+            $('#fp-product-link').addClass('active');
+            $("#fp-topic-link").removeClass('active');
+            $('#fp-cloud-link').removeClass('active');
+            $('#fp-docs-cloud').hide();
+            $('#fp-docs-topics').hide();
+            $('#fp-docs-products').show();
+            $('html,body').animate({scrollTop: $('#current-release-notes').offset().top},'slow');
+        }
+    });
+
+    $(".fp-docs-hashchange").click( function(e) {
+        e.preventDefault();
+        var hash = $(this).attr('href');
+        if (hash == '#product' || hash == '#topic' || hash == '#cloud') {
+            window.location.hash = hash;
+            $(window).hashchange();
+        }
+        return false;
+    });
+
+    $(window).hashchange();
+});
+</script>
+<noscript>
+    <style>
+    #fp-docs-products {
+        display: block;
+    }
+    </style>
+</noscript>
+
+
+            
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-bottom">
+                                    <div class="footer-contact">
+                <div id="footer-contact-icon">
+                    <span class="icon-call-phone"></span>
+                </div>
+                <div id="footer-contact-numbers">
+                    <strong>Contact MySQL Sales</strong><br/>
+                    USA/Canada: +1-866-221-0634 &nbsp;
+                    (<a href="https://www.mysql.com/about/contact/phone/" class="darker-blue">More Countries &raquo;</a>)
+                </div>
+                <div id="footer-contact-copyright">
+                    <a href="http://www.oracle.com/" aria-label="Oracle" title="Oracle"><span class="oracle-logo"></span></a>
+                    &nbsp; <a href="https://www.oracle.com/legal/copyright.html">&copy; 2023 Oracle</a>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a aria-label="Join us on Facebook" title="Join us on Facebook" href="http://www.facebook.com/mysql"><span class="icon-facebook-square"></span></a>
+                <a aria-label="Follow us on Twitter" title="Follow us on Twitter" href="https://twitter.com/mysql"><span class="icon-twitter-square"></span></a>
+                <a aria-label="Follow us on LinkedIn" title="Follow us on LinkedIn" href="https://www.linkedin.com/company/mysql"><span class="icon-linkedin-square"></span></a>
+                <a aria-label="Visit our YouTube channel" title="Visit our YouTube channel" href="http://www.youtube.com/mysqlchannel"><span class="icon-youtube-square"></span></a>
+            </div>
+            <br class="clear" />
+        </div>
+        <div id="footer-links">
+
+            <div id="site-footer-links">
+                <div id="footer-nav"></div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/products/">Products</a></li>
+                        <li><a href="https://www.mysql.com/cloud/">MySQL HeatWave</a></li>
+                        <li><a href="https://www.mysql.com/products/enterprise/">MySQL Enterprise Edition</a></li>
+                        <li><a href="https://www.mysql.com/products/standard/">MySQL Standard Edition</a></li>
+                        <li><a href="https://www.mysql.com/products/classic/">MySQL Classic Edition</a></li>
+                        <li><a href="https://www.mysql.com/products/cluster/">MySQL Cluster CGE</a></li>
+                        <li><a href="https://www.mysql.com/oem/">MySQL Embedded (OEM/ISV)</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/services/">Services</a></li>
+                        <li><a href="https://www.mysql.com/training/">Training</a></li>
+                        <li><a href="https://www.mysql.com/certification/">Certification</a></li>
+                        <li><a href="https://www.mysql.com/consulting/">Consulting</a></li>
+                        <li><a href="https://www.mysql.com/support/">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/downloads/">Downloads</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/mysql/">MySQL Community Server</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/cluster/">MySQL NDB Cluster</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/shell/">MySQL Shell</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/router/">MySQL Router</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://dev.mysql.com/doc/">Documentation</a></li>
+                        <li><a href="https://dev.mysql.com/doc/refman/en/">MySQL Reference Manual</a></li>
+                        <li><a href="https://dev.mysql.com/doc/workbench/en/">MySQL Workbench</a></li>
+                        <li><a href="https://dev.mysql.com/doc/index-cluster.html">MySQL NDB Cluster</a></li>
+                        <li><a href="https://dev.mysql.com/doc/index-connectors.html">MySQL Connectors</a></li>
+                        <li><a href="https://dev.mysql.com/doc/#topic">Topic Guides</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/about/">About MySQL</a></li>
+                        <li><a href="https://www.mysql.com/about/contact/">Contact Us</a></li>
+                        <li><a href="https://blogs.oracle.com/mysql/">Blogs</a></li>
+                                                                        <li><a href="https://www.mysql.com/buy-mysql/">How to Buy</a></li>
+                        <li><a href="https://www.mysql.com/partners/">Partners</a></li>
+                        <li><a href="https://www.mysql.com/about/jobs/">Job Opportunities</a></li>
+                        <li><a href="https://www.mysql.com/sitemap.html">Site Map</a></li>
+                    </ul>
+                </div>
+
+                            </div>
+
+            <div id="footer-logo">
+                <a href="http://www.oracle.com/" aria-label="Oracle" title="Oracle"><span class="oracle-logo"></span></a>
+                &nbsp; <a href="https://www.oracle.com/legal/copyright.html">&copy; 2023 Oracle</a>
+                <div class="footer-legal-links">
+                    <a href="https://www.oracle.com/legal/privacy/">Privacy</a> /
+                    <a href="https://www.oracle.com/legal/privacy/privacy-choices.html">Do Not Sell My Info</a> |
+                    <a href="https://www.oracle.com/us/legal/terms/index.html">Terms of Use</a> |
+                    <a href="https://www.oracle.com/us/legal/third-party-trademarks/index.html">Trademark Policy</a> |
+                    <div id="teconsent"></div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+            <script>
+    if ((oracle.truste.api.getGdprConsentDecision().consentDecision) &&
+            (oracle.truste.api.getGdprConsentDecision().consentDecision.indexOf(0) != -1 ||
+             oracle.truste.api.getGdprConsentDecision().consentDecision.indexOf(2) != -1) )
+    {
+        document.write('<script src="https://labs.mysql.com/common/js/metrics/ora_mysql.js"><\/script>');
+        document.write('<script type="text/javascript" async src="//c.oracleinfinity.io/acs/account/wh3g12c3gg/js/mysql/odc.js?_ora.context=analytics:production"><\/script>');
+    }
+    </script>
+
+        
+    
+</body>
+</html>

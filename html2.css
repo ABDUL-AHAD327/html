@@ -1,0 +1,41 @@
+h3{
+    text-align: center;
+    background-color: rgb(196, 230, 233);
+    height: 200px;
+    width: 200px;
+    border: 4px solid rgb(85, 46, 46);
+    border-radius: 10px;
+    color: rgb(38, 43, 185);
+    background-image: url(png-clipart-national-university-of-computer-and-emerging-sciences-lahore-peshawar-campus-campus-life-miscellaneous-text.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+p{
+    color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    border: 5px solid red;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 1000px;
+    border-radius: ciirfcle;
+    height: 100px;
+    width:200px;
+    background-color: cadetblue;
+    
+}
+h1{
+    
+    text-align: center;
+    background-color: rgb(196, 230, 233);
+    height: 500px;
+    width: 800px;
+    border: 4px solid rgb(85, 46, 46);
+    border-radius: 10px;
+    color: rgb(38, 43, 185);
+    background-image: url(ahad.jpg);
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,43 @@
+.box{
+    border: 5px solid blue;
+    width: 50%;
+    background-color: antiquewhite;
+    padding:10px ;
+    margin: auto;
+}
+h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration:underline;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: lowercase;
+    word-spacing: 0.2em;
+
+}
+ul{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:hover{
+    color: blueviolet;
+
+
+}
+a:visited{
+    color: red;
+}
+a:active{
+    color: blue;
+    font-size: larger;
+}
+body{
+    background-color: bisque;
+}

@@ -1,0 +1,42 @@
+.item{
+    border: 4px solid rgb(97, 97, 97);
+    margin: 10px 10px;
+    padding: 10px 10px;
+    background-color: rgb(208, 228, 221);
+    color: rgb(66, 55, 75);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-top-left-radius:10px ;
+    border-bottom-right-radius: 10px;
+    
+}
+.contain{
+    border: 2px solid rgb(101, 105, 95);
+    width: 1000px;
+    margin: 33px auto;
+    background-color: rgb(140, 247, 247);
+}
+body{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    text-align: justify;
+}
+#fruit{
+    float: left;
+    width: 50%;
+}
+#gun{
+    float: right;
+    width: 50%;
+}
+#stat{
+    clear:both;
+    width: 80%;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration-color: aqua;
+    text-decoration-line: underline;
+    letter-spacing:.1em;
+    font-style: italic;
+}
